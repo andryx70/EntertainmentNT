@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.andry.entertainmentnt.model","l":"Chapter"}]

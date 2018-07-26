@@ -1,6 +1,7 @@
 package com.andry.entertainmentnt;
 
 import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -15,12 +16,25 @@ import com.andry.entertainmentnt.model.Serie;
 import com.andry.makereport.Report;
 import com.andry.entertainmentnt.util.EntertainmentntUtil;
 
+/**
+ * <h1>EntertainmeNT</h1>
+ * EntertainmentNT es un programa que permite visualizar movies, series, libros y revistas
+ *
+ *
+ * @author Andry
+ * @version 1.1
+ * @since 2018
+ * 
+ * 
+ * */
+
 public class Main {
 
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-
+		
+		
 		showMenu();
 
 	}
@@ -29,9 +43,9 @@ public class Main {
 		int exit = 0;
 		do {
 			
-			System.out.println("BIENVENIDOS AMAZON VIEWER");
+			System.out.println("BIENVENIDOS A ENTERTAINMENTNT");
 			System.out.println("");
-			System.out.println("Selecciona el número de la opción deseada");
+			System.out.println("Selecciona el numero de la opcion deseada");
 			System.out.println("1. Movies");
 			System.out.println("2. Series");
 			System.out.println("3. Books");

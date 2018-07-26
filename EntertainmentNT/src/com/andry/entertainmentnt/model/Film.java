@@ -1,5 +1,21 @@
 package com.andry.entertainmentnt.model;
 
+/**
+ * <h1>Film</h1>
+ * Film es una clase padre abstracta
+ * <p> Esta clase es la base de la familia film, como es abstracta no puede crearse instancia
+ * Contiene el metodo abstracto 
+ * 
+ * {@code viem()}
+ * 
+ * que es obligatorio implementar para todo aquel que pertenezca a la familia
+ * 
+ * @author Andry
+ * @version 1.1
+ * @since 2018
+ * 
+ * */
+
 public abstract class Film {
 	
 	private String title;
@@ -8,6 +24,10 @@ public abstract class Film {
 	private int duration;
 	private short year;
 	private boolean viewed;
+	
+	public Movie() {
+		
+	}
 	
 	
 	
@@ -67,6 +87,9 @@ public abstract class Film {
 		this.viewed = viewed;
 	}
 	
+	/**
+	 * {@code view()} es un metodo abstracto obligatorio de implementar
+	 * */
 	
 	public abstract void view();
 
