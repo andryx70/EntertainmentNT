@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import com.andry.entertainmentnt.db.DateBase;
+import static com.andry.entertainmentnt.db.DateBase.*;
 import java.util.ArrayList;
 
 import com.andry.entertainmentnt.db.IDBConnection;
@@ -40,6 +40,10 @@ public interface MovieDAO extends IDBConnection {
 	}
 	
 	private boolean getMovieViewed() {
+		boolean viewed = false;
+		String query = "SELECT * FROM " + TVIEWED + "WHERE " + TVIEWED_IDMATERIAL +
+				"= " + ID_TMATERIAL[0] + "AND " + TVIEWED_IDELEMENT;
+		
 		return false;
 	}
 }
